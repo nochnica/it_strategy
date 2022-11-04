@@ -17,10 +17,10 @@ h1 {
 }
 
 h2 {
-	font-size: 42px;
+	font-size: 44px;
 	padding: 0px;
 	margin: 0px;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 }
 
 h3 {
@@ -41,15 +41,85 @@ hr {
 	border: 5px solid #202020;
 	border-radius: 10px;
 	padding: 0px;
-	margin: 0px;
 }
 
 img {
 	width: 125px;
 	height: 125px;
-	border: 10px solid #202020;
 	border-radius: 20px;
 	margin: 5px 0px;
+}
+
+td {
+	border: 5px solid #202020;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: #202020;
+	color: #f5f5dc;
+}
+
+a {
+	font-size: 40px;
+	font-style: italic;
+	color: #880808;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+a:visited { color: #880808; }
+
+input {
+	background-color: #f5f5dc;
+	border-radius: 20px;
+	border: 5px solid #202020;
+	align-self: left;
+	padding: 0px 20px;
+	font-family: Nunito, sans-serif;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+input::placeholder {
+	font-family: Nunito, sans-serif;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+textarea {
+	background-color: #f5f5dc;
+	border-radius: 20px;
+	border: 5px solid #202020;
+	align-self: left;
+	padding: 0px 20px;
+	font-family: Nunito, sans-serif;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+textarea::placeholder {
+	font-family: Nunito, sans-serif;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+button {
+	background-color: #880808;
+	color: #f5f5dc;
+	border-radius: 40px;
+	border: 0px;
+	max-width: 220px;
+
+
+	font-family: Nunito, sans-serif;
+	text-transform: lowercase;
+	font-size: 40px;
+	font-style: italic;
+	padding: 0px 0px 5px 0px;
 }
 
 .section {
@@ -57,6 +127,14 @@ img {
 	margin: 55px 0px;
 	display: flex;
 	flex-direction: row;
+}
+
+.column { flex-direction: column; }
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
 }
 
 .left {
@@ -67,13 +145,27 @@ img {
 
 .right {
 	margin: 5.5% 0% 0% 0%;
+	width: 240%;
 }
 
-.mini {
+.nomargin { margin: 10px 0px 0px 0px; }
+
+.center {
+	width: 75%;
+	text-align: center;
+}
+
+#mini {
 	padding: 0px;
 	margin: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 65%;
+}
+
+#btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
